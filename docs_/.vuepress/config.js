@@ -1,9 +1,8 @@
 /**
- * base:
- * En desarrollo: /carpetas_compiladas_vuepress/4-documentacion/
- * En producción: /4-documentacion/
- */
-
+* Para levantar el proyecto, en el elemento "base" debe ir:
+* En desarrollo con XAMPP: /dist-vuepress/4-documentacion/
+* En producción con GitHub: /4-documentacion/
+*/
  module.exports = {
   title: 'Documentación',
   description: 'Documentacion para las tecnologías estudiadas',

@@ -4,7 +4,5 @@ robocopy docs_/.vuepress/dist/ docs /e
 # Iniciar el proyecto localmente (Desarrollo)
 npm run docs:dev
 
-# Compilar proyecto para subirlo a Github (Produccion)
+# Compilar proyecto para subirlo a GitHub (Produccion)
 npm run docs:build
-
-
