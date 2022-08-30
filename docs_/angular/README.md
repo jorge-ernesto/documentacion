@@ -1,4 +1,4 @@
-# Angular 10, 11
+# Angular
 
 Podemos entrar a la web oficial de [Angular](https://angular.io/)<br>
 Podemos entrar a la web oficial de [Angular CLI](https://angular.io/cli)<br>
@@ -64,7 +64,7 @@ which ng (Si aun obtenemos angular-cli, ejecutar el siguiente comando para obten
 3. Instalamos **Angular CLI** en su ultima version
 ```
 npm install -g @angular/cli (Intalar la ultima version de angular-cli)
-npm install -g @angular/cli@10.2.0 (Instalar version especifica de angular-cli, esta es la version mas estable que encontre, no se instalo la version @angular/cli@10.2.5 debido a que aparece el mensaje indicando que no se encuentra dicha versión) 
+npm install -g @angular/cli@10.2.4 (Instalar version especifica de angular-cli, esta es la version mas estable que encontre, esta acompañada de Angular 10.2.5, y Node 12.11.1 segun "Lista de compatibilidad para Angular" en la seccion "Enlaces Utiles") 
 
 ng --version (Verificar instalación de Angular CLI, se puede ejecutar en la consola sin una ruta especifica o en una carpeta dentro de un proyecto de Angular)
 ```
@@ -72,7 +72,7 @@ ng --version (Verificar instalación de Angular CLI, se puede ejecutar en la con
 ### blog-angular
 
 ::: tip Notas de la instalación de blog-angular
-Cuando cree este proyecto lo hice con Angular CLI: 10.2.0, esto debido a que cuando instale la ultima version de Angular CLI, tuve problemas al instalar el Froala, no podia instalarlo
+Cuando cree este proyecto lo hice con Angular CLI: 10.2.4, esto debido a que cuando instale la ultima version de Angular CLI, tuve problemas al instalar el Froala, no podia instalarlo
 :::
 
 * [Instalamos Jquery](https://www.npmjs.com/package/jquery)
@@ -82,9 +82,9 @@ Cuando cree este proyecto lo hice con Angular CLI: 10.2.0, esto debido a que cua
 * [Problema de compatibilidad entre angular-froala-wysiwyg y ngModel](https://github.com/froala/angular-froala-wysiwyg/issues/4) (Se soluciono usando input tipo hidden)
 * [Problema con dependencia al ejecutar npm-update o crear nuevo proyecto](https://stackoverflow.com/questions/68339098/when-i-run-ng-new-npm-has-a-dependency-problem) 
 
-Tuve este mismo problema con un nuevo proyecto.</br>
-En el generado package.json, debería ver una línea que dice "jasmine-core": "~3.7.0"pero parece que otras dependencias (creo que karma según la salida de error aquí) requieren jasmine-core3.8.0 o superior. Simplemente edite la línea que dice "jasmine-core": "~3.7.0",ser "jasmine-core": "~3.8.0",y luego ejecútela manualmente npm install y debería tener éxito.</br>
-A continuación, debería poder ejecutar ng serve --open desde el mismo directorio y hacerlo funcionar correctamente.
+&nbsp;&nbsp;&nbsp;&nbsp;Tuve este mismo problema con un nuevo proyecto.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;En el generado package.json, debería ver una línea que dice "jasmine-core": "~3.7.0"pero parece que otras dependencias (creo que karma según la salida de error aquí) requieren jasmine-core3.8.0 o superior. Simplemente edite la línea que dice "jasmine-core": "~3.7.0",ser "jasmine-core": "~3.8.0",y luego ejecútela manualmente npm install y debería tener éxito.</br>
+&nbsp;&nbsp;&nbsp;&nbsp;A continuación, debería poder ejecutar ng serve --open desde el mismo directorio y hacerlo funcionar correctamente.
 
 * [¿Cuál es la opción --save para la instalación de npm?](https://www.it-swarm-es.com/es/node.js/cual-es-la-opcion-save-para-la-instalacion-de-npm/1043235520/#:~:text=A%20partir%20de%20npm%205.0,save%20ya%20no%20es%20necesaria.)
 * [Reemplazar HTML Entities con JavaScript](https://victorroblesweb.es/2019/01/20/reemplazar-html-entities-con-javascript/)
@@ -142,7 +142,7 @@ ng g component components/post/post-detail
 ### master-javascript
 
 ::: tip Notas de la instalación de blog-angular
-Cuando cree este proyecto lo hice con Angular CLI: 10.2.0, esto debido a que el proyecto blog-angular ya lo habia utilizado
+Cuando cree este proyecto lo hice con Angular CLI: 10.2.4, esto debido a que el proyecto blog-angular ya lo habia utilizado
 :::
 
 * [Error angular: el tipo genérico 'ModuleWithProviders' requiere 1 argumento de tipo](https://stackoverflow.com/questions/62755093/angular-error-generic-type-modulewithproviderst-requires-1-type-arguments)

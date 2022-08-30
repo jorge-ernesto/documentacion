@@ -1,13 +1,12 @@
-# NodeJS
+# Node
 
 Podemos entrar a la web oficial de [Node](https://nodejs.org/es/)<br>
 Podemos entrar a la web oficial de [npm](https://www.npmjs.com/)
 
-
 ## ¿Qué es Node?
 
 ::: tip Aviso
-* Podemos entrar a la [documentación creada por Bluuweb sobre Node](https://bluuweb.github.io/node/)
+* Podemos entrar a la [documentación creada por Bluuweb sobre Node](https://bluuweb.github.io/node/) creada en VuePress
 :::
 
 ## Enlaces utiles

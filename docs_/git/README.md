@@ -1,10 +1,10 @@
-# Git / Github
+# Git / GitHub
 
 Podemos entrar a la web oficial de [Git](https://git-scm.com/)<br>
-Podemos entrar a la web oficial de [Github](https://github.com/)<br>
-Repositorios de Github: [Bluuweb](https://github.com/bluuweb), [Jorge Ernesto](https://github.com/jorge-ernesto)
+Podemos entrar a la web oficial de [GitHub](https://github.com/)<br>
+Repositorios de GitHub: [Bluuweb](https://github.com/bluuweb), [Jorge Ernesto](https://github.com/jorge-ernesto)
 
-## ¿Qué es Git y Github?
+## ¿Qué es Git y GitHub?
 
 ::: tip Aviso
 Podemos entrar a la [documentación creada por Bluuweb sobre Git](https://bluuweb.github.io/tutorial-github/guia/) creado en VuePress
@@ -14,15 +14,19 @@ Podemos entrar a la [documentación creada por Bluuweb sobre Git](https://bluuwe
 
 En esta seccion pondremos enlaces utiles:
 
+* [Setting your username in Git](https://docs.github.com/es/get-started/getting-started-with-git/setting-your-username-in-git)<br>
+* [Setting your commit email address](https://docs.github.com/es/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)<br>
+* [Formas de abrir CMD en segundos y ejecutar comandos en Windows](https://www.softzone.es/windows-10/como-se-hace/abrir-cmd-ventana-simbolo-sistema/)<br>
+
 ## Apuntes varios
 
 En esta seccion pondremos apuntes varios:
 
 ### Git
 ```
-git config --global user.name “Monalisa” (Configurar)
+git config --global user.name "Monalisa" (Configurar)
 git config --global user.name (Mostrar)
-git config --global user.email “email@example.com” (Configurar)
+git config --global user.email "email@example.com" (Configurar)
 git config --global user.email (Mostrar)
 ```
 
@@ -35,11 +39,11 @@ git init (Inicia git)
 
 git status
 git add index.html
-git commit -m “Agregando index.html”
+git commit -m "Agregando index.html"
 
 git status
 git add .
-git commit -m “Agregando estructura básica de HTML”
+git commit -m "Agregando estructura básica de HTML"
 
 git status
 git add index.html
@@ -68,7 +72,7 @@ git checkout -b experimento (Creamos una rama llamada experimento, además cambi
 git branch 
 git status
 git add .
-git commit -m “Agregamos texto a la rama Exprimento”
+git commit -m "Agregamos texto a la rama Exprimento"
 git log --oneline (Muestra la descripción de los commit)
 ```
 
@@ -88,6 +92,7 @@ git pull origin master
 ```
 
 ```
+git remote -v (Obtener el remoto de un repositorio de GitHub)
 git push sistemaweb
 ```
 
@@ -99,6 +104,6 @@ heroku login (Nos logueamos con Heroku)
 heroku git:clone -a jorge-cywdt (Clonamos el repositorio de git al repositorio de heroku)
 
 git add .
-git commit -m “make it better”
+git commit -m "make it better"
 git push heroku master (Pusheamos al repositorio a Heroku)
 ```
