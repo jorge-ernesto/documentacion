@@ -1,10 +1,10 @@
 /**
 * Para levantar el proyecto, en el elemento "base" debe ir:
 * En desarrollo con XAMPP                          : /dist-vuepress/4-documentacion/
-* En produccion con GitHub                         : /4-documentacion/
+* En produccion con GitHub                         : /4-documentacion/ o /documentacion/
 * En produccion con el servidor jorgeernestoweb.com: /documentacion/
 */
- module.exports = {
+module.exports = {
   title: 'Documentación',
   description: 'Documentacion para las tecnologías estudiadas',
   base: '/documentacion/',
@@ -29,7 +29,6 @@
         '/angular/',
         '/node/',
         '/mongodb/',
-        '/portafolio/',
       ]
   }
  

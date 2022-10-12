@@ -7,10 +7,10 @@ Esta guía está en constante actualización, podría no estar completa.
 :::
 
 ## Tecnologías actuales
-1. [Git / Github](/docs/git)
+1. [Git y Github](/docs/git)
 2. [VuePress](/docs/vuepress)
 3. [PHP](/docs/php)
 4. [Laravel](/docs/laravel)
 5. [Angular](/docs/angular)
-7. [Node](/docs/node)
-6. [MongoDB](/docs/mongodb)
+6. [Node](/docs/node)
+7. [MongoDB](/docs/mongodb)
