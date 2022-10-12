@@ -17,6 +17,11 @@ En esta seccion pondremos enlaces utiles:
 * [Setting your username in Git](https://docs.github.com/es/get-started/getting-started-with-git/setting-your-username-in-git)<br>
 * [Setting your commit email address](https://docs.github.com/es/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address)<br>
 * [Formas de abrir CMD en segundos y ejecutar comandos en Windows](https://www.softzone.es/windows-10/como-se-hace/abrir-cmd-ventana-simbolo-sistema/)<br>
+* [Sincronización de Git](https://www.atlassian.com/es/git/tutorials/syncing)
+    * [git remote](https://www.atlassian.com/es/git/tutorials/syncing/git-remote)
+    * [git push](https://www.atlassian.com/es/git/tutorials/syncing/git-push)
+    * [git pull](https://www.atlassian.com/es/git/tutorials/syncing/git-pull)
+    * [git fetch](https://www.atlassian.com/es/git/tutorials/syncing/git-fetch)
 
 ## Apuntes varios
 
@@ -85,23 +90,26 @@ git branch -d experimento (Eliminamos la rama)
 ```
 
 ```
-git push (Hacemos push en nuestro repositorio de GitHub)
-git push origin master
-git pull (Hacemos pull en nuestro repositorio de GitHub)
-git pull origin master
-```
+git remote -v (Enumera las conexiones remotas que tienes con otros repositorios)
+git remote rm <name> | git remote remove <name> (Elimina la conexion remota)
+git remote rm origin | git remote remove origin
+git remote add <name> <url> (Agrega nueva conexion remota)
+git remote add origin https://github.com/jorge-ernesto/documentacion.git
 
-```
-git remote -v (Obtener el remoto de un repositorio de GitHub)
+git push (Hacemos push en nuestro repositorio de GitHub)
+git push <remote> <branch>
+git push origin master
 git push sistemaweb
+
+git pull (Hacemos pull en nuestro repositorio de GitHub)
+git pull <remote> <branch>
+git pull origin master
 ```
 
 ### Heroku
 ```
-cd C:\xampp\htdocs\2 Bootstrap\4 Bootstrap 4- El Curso Completo, Práctico y Desde Cero\bootstrap
-
 heroku login (Nos logueamos con Heroku)
-heroku git:clone -a jorge-cywdt (Clonamos el repositorio de git al repositorio de heroku)
+heroku git:remote -a jorgeernesto-portafolio (Clonamos el repositorio de git al repositorio de heroku)
 
 git add .
 git commit -m "make it better"
