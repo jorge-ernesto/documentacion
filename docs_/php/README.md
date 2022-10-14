@@ -22,7 +22,7 @@ En esta seccion pondremos enlaces utiles:
 * **PHP**
     * [Fatal Error: Allowed Memory Size Exhausted In XAMPP](https://stackoverflow.com/questions/43838591/fatal-error-allowed-memory-size-exhausted-in-xampp)
 * **Postgres**
-    * [La mejor manera de verificar "valor vacío o nulo" en Postgres](https://www.it-swarm-es.com/es/sql/la-mejor-manera-de-verificar-valor-vacio-o-nulo/1047422568/)
+    * [La mejor manera de verificar "valor vacío o nulo" en PostgreSQL](https://www.it-swarm-es.com/es/sql/la-mejor-manera-de-verificar-valor-vacio-o-nulo/1047422568/)
 
 ## Apuntes varios
 
@@ -47,6 +47,7 @@ composer --version
     * [Html2Pdf - GitHub (Acá se puden descargar ejemplos de como usar la librería)](https://github.com/spipu/html2pdf)
     ```
     composer require spipu/html2pdf
+    composer update (Se ejecuta si no tuvieramos la carpeta "vendor" o si actualizamos "composer.json")
     ```
 
 * **Zebra Pagination:**
@@ -54,6 +55,7 @@ composer --version
     * [Zebra Pagination - GitHub (Acá se puden descargar ejemplos de como usar la librería)](https://github.com/stefangabos/Zebra_Pagination)
     ```
     composer require stefangabos/zebra_pagination
+    composer update (Se ejecuta si no tuvieramos la carpeta "vendor" o si actualizamos "composer.json")
     ```
 
 * **PHP Thumb:** Puede ser útil, pero hasta el momento no se encontro utilidad como tal, asi que no se trabajo en [7-aprendiendo-librerias-php](#_7-aprendiendo-librerias-php)
@@ -61,10 +63,12 @@ composer --version
     * [PHP Thumb - GitHub (Acá se puden descargar ejemplos de como usar la librería)](https://github.com/masterexploder/PHPThumb)
     ```
     composer require masterexploder/phpthumb
+    composer update (Se ejecuta si no tuvieramos la carpeta "vendor" o si actualizamos "composer.json")
     ```
 * **FirePHP:** Requiere extensión del navegador, lo cual lo hace impráctico, asi que no se trabajo en [7-aprendiendo-librerias-php](#_7-aprendiendo-librerias-php)
     * [FirePHP - Packagist](https://packagist.org/packages/firephp/firephp-core)
     * [FirePHP - GitHub (Acá se puden descargar ejemplos de como usar la librería)](https://github.com/firephp/firephp-core)
     ```
     composer require firephp/firephp-core
+    composer update (Se ejecuta si no tuvieramos la carpeta "vendor" o si actualizamos "composer.json")
     ```
