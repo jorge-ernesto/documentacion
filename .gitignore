@@ -1,0 +1,5 @@
+# dependencies
+/node_modules
+
+# VuePress
+/docs_/.vuepress/dist
