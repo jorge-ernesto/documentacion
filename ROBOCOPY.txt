@@ -1,0 +1,15 @@
+# Copiar y pegar con robocopy
+robocopy docs_/.vuepress/dist/ docs /e
+
+# Iniciar el proyecto localmente (Desarrollo)
+npm run docs:dev
+
+# Compilar proyecto para subirlo a GitHub (Produccion)
+npm run docs:build
+
+# Hostinger
+Sintaxis de ejemplo del comando SCP en Linux
+https://www.hostinger.es/tutoriales/comando-scp
+
+# Enviar con SCP al servidor jorgeernestoweb.com
+scp -r -P 65002 docs_/.vuepress/dist/* u272484380@195.179.239.154:/home/u272484380/domains/jorgeernestoweb.com/public_html/documentacion/
