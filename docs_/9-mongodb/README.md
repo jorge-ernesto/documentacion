@@ -103,34 +103,34 @@ Instalamos [Robo3T](https://robomongo.org/) desde su web
 ### Aprendiendo MongoDB
 #### Master en JavaScript: Aprender JS, jQuery, Angular, NodeJS
 ```javascript
-help       # Revisamos comandos de MongoDB
-db.help()  # Comando de Ayuda para DB
-show dbs   # Mostramos Bases de Datos
+help;          # Verificar comandos de MongoDB
+db.help();     # Verificar comandos de MongoDB relacionados a las BD
+db.version();  # Verificar version de BD
+db.stats();    # Verificar estadisticas de BD
+show dbs;      # Verificar Bases de Datos
 
-use curso_master_javascript;                                      # Creamos Base de Datos
-db.bookmarks.insert({id:1, title:'Curso Master en JavaScript'});  # Solo insertando una coleccion hacemos commit a la creacion de BD
+use curso_master_javascript;                                          # Creamos Base de Datos
+db.bookmarks.insert({ id: 1, title: 'Curso Master en JavaScript' });  # Solo insertando una coleccion hacemos commit a la creacion de BD
 
-db.getCollection('bookmarks').find({});      # Buscamos en coleccion "bookmarks"
-db.getCollection('bookmarks').find({id:1});  # Buscamos en coleccion "bookmarks" el documento con el campo/dato del documento id:1
-
-# Alternativas
-db.bookmarks.find();
-db.bookmarks.find({id:1});
+db.getCollection('bookmarks').find({});         # Buscamos en coleccion "bookmarks"
+db.getCollection('bookmarks').find({ id: 1 });  # Buscamos en coleccion "bookmarks" el documento con el campo/dato del documento id:1
+db.bookmarks.find();                            # Alternativa a buscamos en coleccion "bookmarks"
+db.bookmarks.find({ id: 1 });                   # Alternativa a buscamos en coleccion "bookmarks"
 ```
 
 #### Curso de MongoDB - Aprende bases de datos NoSQL + API NodeJS
 ```javascript
-help       # Revisamos comandos de MongoDB
-db.help()  # Comando de Ayuda para DB
-show dbs   # Mostramos Bases de Datos
+help;          # Verificar comandos de MongoDB
+db.help();     # Verificar comandos de MongoDB relacionados a las BD
+db.version();  # Verificar version de BD
+db.stats();    # Verificar estadisticas de BD
+show dbs;      # Verificar Bases de Datos
 
-use curso_mongo;                                        # Creamos Base de Datos
-db.frutas.insert({nombre:'Naranja', color:'naranja'});  # Solo insertando una coleccion hacemos commit a la creacion de BD
-manzana = {nombre:'Manzana', color:'verde'};            # Creamos variable, las variables solo persisten en la consola que se utilizan
-db.frutas.insert(manzana);                              # Insertamos coleccion usando variable
+use curso_mongo;                                            # Creamos Base de Datos
+db.frutas.insert({ nombre: 'Naranja', color: 'naranja' });  # Solo insertando una coleccion hacemos commit a la creacion de BD
+manzana = { nombre: 'Manzana', color: 'verde' };            # Creamos variable, las variables solo persisten en la consola que se utilizan
+db.frutas.insert(manzana);                                  # Insertamos coleccion usando variable
 
 db.getCollection('frutas').find({});  # Buscamos en coleccion "frutas"
-
-# Alternativas
-db.frutas.find();
+db.frutas.find();                     # Alternativa a buscamos en coleccion "frutas"
 ```

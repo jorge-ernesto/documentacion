@@ -121,7 +121,7 @@ npm i validator                 # Instalamos validator             ---> Validar 
 
 
 
-### seccion-07-node (master-frameworks-javascript)
+### seccion-08-node (master-frameworks-javascript)
 ::: tip Notas de la instalación
 * Cuando cree este proyecto lo hice con **Node 18.14.0** instala **NPM 9.3.1**
 :::
@@ -156,7 +156,7 @@ npm i validator                 # Instalamos validator          ---> Validar dat
 En esta seccion pondremos cambios de versión de Node:
 
 ### Node 8.9.4 a Node 18.14.0 (7-backend-nodejs-two)
-### Node 10.16.0 a Node 18.14.0 (3-api-rest-node-two, seccion-07-node)
+### Node 10.16.0 a Node 18.14.0 (3-api-rest-node-two, seccion-08-node)
 
 ::: details Notas
 1. Cuando realice este cambio ocurrio el error

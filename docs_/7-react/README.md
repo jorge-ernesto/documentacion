@@ -19,10 +19,9 @@ Podemos entrar a la web oficial de [NPM](https://www.npmjs.com/)
 En esta seccion pondremos enlaces utiles:
 
 * [Instalamos React](https://www.udemy.com/course/master-en-frameworks-javascript-aprende-angular-react-vue-js/learn/lecture/15527506#overview) ---> Master en Frameworks JavaScript: Aprende Angular, React, Vue
-* [Instalamos React](https://www.udemy.com/course/master-en-frameworks-javascript-aprende-angular-react-vue-js/learn/lecture/15527506#overview) ---> Master en Frameworks JavaScript: Aprende Angular, React, Vue
-* [Instalamos React](https://www.udemy.com/course/master-en-frameworks-javascript-aprende-angular-react-vue-js/learn/lecture/15527506#overview) ---> Master en Frameworks JavaScript: Aprende Angular, React, Vue
-* [Instalamos React](https://www.udemy.com/course/master-en-frameworks-javascript-aprende-angular-react-vue-js/learn/lecture/15527506#overview) ---> Master en Frameworks JavaScript: Aprende Angular, React, Vue
-* [Instalamos React](https://www.udemy.com/course/master-en-frameworks-javascript-aprende-angular-react-vue-js/learn/lecture/15527506#overview) ---> Master en Frameworks JavaScript: Aprende Angular, React, Vue
+* [Instalar React y crear el primero proyecto](https://www.udemy.com/course/master-en-react-aprender-reactjs-hooks-mern-nodejs-jwt/learn/lecture/31224020#overview) ---> Master en React: Aprender ReactJS, Hooks, MERN, NodeJS, JWT+
+* [Plugin para navegadores](https://www.udemy.com/course/master-en-react-aprender-reactjs-hooks-mern-nodejs-jwt/learn/lecture/31224030#overview) ---> Master en React: Aprender ReactJS, Hooks, MERN, NodeJS, JWT+
+* [Instalaciones necesarias y recomendadas](https://www.udemy.com/course/react-cero-experto/learn/lecture/19606276#overview) ---> React: De cero a experto ( Hooks y MERN )
 
 ::: tip Notas de los proyectos
 #### <p style="color:green;">Importante: "Two" significa que lo hice yo mismo</p>
