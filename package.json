@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs:dev": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs_",
+    "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs_"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.9.10"
+  }
 }
