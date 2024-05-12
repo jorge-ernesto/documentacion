@@ -51,7 +51,10 @@ Recordar que los modulos se pueden descargar desde [PIP](https://pypi.org/)
 :::
 ```bash
 python --version
+python
+
 pip --version
+pip
 ```
 
 ### Modulos instalados
