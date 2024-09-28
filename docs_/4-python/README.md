@@ -1,7 +1,7 @@
 # 4 Python
 
 Podemos entrar a la web oficial de [Python](https://www.python.org/)<br>
-Podemos entrar a la web oficial de [PIP](https://pypi.org/)<br>
+Podemos entrar a la web oficial de [Pip](https://pypi.org/)<br>
 Podemos entrar a la web oficial de [Django](https://www.djangoproject.com/)<br>
 Podemos entrar a la web oficial de [DB Browser for SQLite](https://sqlitebrowser.org/)<br>
 
@@ -47,11 +47,14 @@ En esta seccion pondremos apuntes varios:
 ### Instalamos Python
 Instalamos [Python](https://www.python.org/downloads/) desde su web
 ::: tip Notas
-Recordar que los modulos se pueden descargar desde [PIP](https://pypi.org/)
+Recordar que los modulos se pueden descargar desde [Pip](https://pypi.org/)
 :::
 ```bash
 python --version
+python
+
 pip --version
+pip
 ```
 
 ### Modulos instalados
@@ -60,8 +63,16 @@ pip --version
 # https://byspel.com/como-ver-los-modulos-instalados-en-python/
 pip list
 
-# Actualizar PIP
-# https://datatofish.com/add-python-to-windows-path/ (Esta url también ayuda a entender como agregar al PATH de Windows, Python y PIP, además de actualizar PIP)
+# Para poder ver un modulo especifico y su version
+# ChatGPT
+pip list | grep <modulo>
+
+# Limpiar cache de pip (minuscula a proposito)
+# ChatGPT
+pip cache purge
+
+# Actualizar Pip
+# https://datatofish.com/add-python-to-windows-path/ (Esta url también ayuda a entender como agregar al PATH de Windows, Python y Pip, además de actualizar Pip)
 python -m pip install --upgrade pip
 
 # Instalar modulos
@@ -214,7 +225,7 @@ pip install pyjokes
 pip install pyinstaller
 ```
 
-### Ubicación de los Modulos instalados de Python
+### Ubicación de los modulos instalados
 ```bash
 # En general, los paquetes de Python se instalan en la carpeta "site-packages" del entorno de Python en el que se está trabajando. Esta carpeta se crea automáticamente durante la instalación de Python y es específica de cada versión de Python que se tenga instalada en el sistema.
 # La ubicación exacta de la carpeta "site-packages" puede variar dependiendo del sistema operativo y de la forma en que se instaló Python. En sistemas Linux y macOS, la carpeta "site-packages" suele encontrarse en la ruta "/usr/lib/pythonX.Y/site-packages", donde "X.Y" representa la versión específica de Python que se tiene instalada. En Windows, la carpeta "site-packages" suele estar ubicada en la ruta "C:\PythonX.Y\Lib\site-packages".
@@ -222,6 +233,8 @@ pip install pyinstaller
 import site
 print(site.getsitepackages())
 ```
+
+
 
 ## Django
 
@@ -232,8 +245,6 @@ print(site.getsitepackages())
 # Revisar version de Django instalada
 python -m django --version
 ```
-
-
 
 ```bash
 # Crear proyecto nuevo
@@ -275,8 +286,6 @@ python manage.py sqlmigrate miapp 0001
 # Ejecutar migracion creada
 python manage.py migrate
 ```
-
-
 
 ### Panel de Administración de Django
 ```bash
