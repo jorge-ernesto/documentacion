@@ -37,11 +37,12 @@ Recordar que los paquetes se pueden descargar desde la opcion `Browse Packages` 
 :::
 ```bash
 composer --version
+composer
 ```
 
 ### 7-aprendiendo-librerias-php
 ::: tip Notas
-[Sección 62: Librerías externas para PHP](https://www.udemy.com/course/master-en-php-sql-poo-mvc-laravel-symfony-4-wordpress/learn/lecture/11849656#overview) ---> Master en PHP, SQL, POO, MVC, Laravel, Symfony, WordPress +
+[Sección 62: Librerías externas para PHP](https://www.udemy.com/course/master-en-php-sql-poo-mvc-laravel-symfony-4-wordpress/learn/lecture/11849656#overview) ----> Master en PHP, SQL, POO, MVC, Laravel, Symfony, WordPress +
 :::
 
 * **Html2Pdf:**
