@@ -1,8 +1,8 @@
 # 8 Angular
 
-Podemos entrar a la web oficial de [Angular](https://angular.io/)<br>
-Podemos entrar a la web oficial de [Angular CLI](https://angular.io/cli)<br>
-Podemos entrar a la web oficial de [Node](https://nodejs.org/es/)<br>
+Podemos entrar a la web oficial de [Angular](https://angular.io/)<br />
+Podemos entrar a la web oficial de [Angular CLI](https://angular.io/cli)<br />
+Podemos entrar a la web oficial de [Node](https://nodejs.org/es/)<br />
 Podemos entrar a la web oficial de [NPM](https://www.npmjs.com/)
 
 ## ¿Qué es Angular?
@@ -21,12 +21,15 @@ Según [Desarrollo web](https://desarrolloweb.com/articulos/angular-cli.html): *
 
 En esta seccion pondremos enlaces utiles:
 
-* [Instalamos Angular](https://www.udemy.com/course/master-en-javascript-aprender-js-jquery-angular-nodejs-y-mas/learn/lecture/10311524#overview) ---> Master en JavaScript: Aprender JS, jQuery, Angular, NodeJS
-* [Instalamos Angular](https://www.udemy.com/course/master-en-frameworks-javascript-aprende-angular-react-vue-js/learn/lecture/15718220#overview) ---> Master en Frameworks JavaScript: Aprende Angular, React, Vue
-* [Instalamos Angular](https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/learn/lecture/13239438#overview) ---> Master en webs Full Stack: Angular, Node, Laravel, Symfony + **(Sección Laravel)**
-* [Instalamos Angular](https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/learn/lecture/13666344#overview) & [Instalar Angular 7 paso a paso - Victor Robles](https://victorroblesweb.es/2018/11/20/instalar-angular-7-paso-a-paso/) ---> Master en webs Full Stack: Angular, Node, Laravel, Symfony + **(Sección Node)**
-* [Instalamos Angular](https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/learn/lecture/14327842#overview) ---> Master en webs Full Stack: Angular, Node, Laravel, Symfony + **(Sección Symfony)**
-* [¿Cual es la version de angular que tengo instalada?](https://es.stackoverflow.com/questions/205257/cual-es-la-version-de-angular-que-tengo-instalada)
+* [166. Instalar Angular](https://www.udemy.com/course/master-en-javascript-aprender-js-jquery-angular-nodejs-y-mas/learn/lecture/10311524#overview) ----> Master en JavaScript: Aprender JS, jQuery, Angular, NodeJS
+----
+* [91. Instalar Angular paso a paso](https://www.udemy.com/course/master-en-frameworks-javascript-aprende-angular-react-vue-js/learn/lecture/15718220#overview) ----> Master en Frameworks JavaScript: Aprende Angular, React, Vue
+----
+* [50. Instalar Angular](https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/learn/lecture/13239438#overview) ----> Master en webs Full Stack: Angular, Node, Laravel, Symfony + **(Sección Laravel y Angular)**
+* [180. Instalar Angular y preparar el proyecto](https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/learn/lecture/13666344#overview) ----> [Instalar Angular 7 paso a paso - Victor Robles](https://victorroblesweb.es/2018/11/20/instalar-angular-7-paso-a-paso/) ----> Master en webs Full Stack: Angular, Node, Laravel, Symfony + **(Sección Node y Angular)**
+* [292. Como instalar Angular y crear un proyecto con Angular CLI](https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/learn/lecture/14327842#overview) ----> Master en webs Full Stack: Angular, Node, Laravel, Symfony + **(Sección Symfony y Angular)**
+----
+* [Revisar version de Angular en proyecto](https://es.stackoverflow.com/questions/205257/cual-es-la-version-de-angular-que-tengo-instalada)
 * [Guía de Estilo para Angular](https://angular.io/guide/styleguide)
 * [Guía de Estilo para JavaScript](http://developinginspanish.com/2018/03/31/guia-de-estilo-javascript-de-google/)
 * [Lista de compatibilidad para Angular - Referencia StackOverflow](https://stackoverflow.com/questions/60248452/is-there-a-compatibility-list-for-angular-angular-cli-and-node-js)
@@ -41,7 +44,7 @@ En esta seccion pondremos enlaces utiles:
 En esta seccion pondremos apuntes varios:
 
 ### Instalamos Node
-Instalamos [Node](https://nodejs.org/es/) desde su web.<br>
+Instalamos [Node](https://nodejs.org/es/) desde su web<br>
 También podemos ver las [Versiones de Node](https://nodejs.org/es/download/releases/) y las [Versiones de Angular](https://angular.io/docs)
 ```bash
 node -v
@@ -49,7 +52,7 @@ npm -v
 ```
 
 ### Instalamos Angular
-1. Actualizamos **NPM** a su ultima versión, borramos cache y desactivamos auditorias
+1. Instalamos **NPM**, borramos cache y desactivamos auditorias
 ```bash
 npm install -g npm@latest  # NO USAR ESTE COMANDO, sino usar el ejecutable de la web e instalar la versión que necesites o la version LTS (El ejecutable instala Node y la version de NPM con la que viene)
 npm cache clean --force
@@ -73,56 +76,11 @@ npm cache verify & npm cache clear --force  # Borramos la cache, se verifico y s
 npm install -g @angular/cli
 
 # INSTALAR VERSION ESPECIFICA DE ANGULAR CLI
-npm install -g @angular/cli@10.2.4
+npm install -g @angular/cli@16.2.2
 
-# INSTALAR VERSION ESPECIFICA DE ANGULAR CLI
-npm install -g @angular/cli@6.0.8
-
-# Verificar instalacion de Angular CLI
-ng <comand>  # Angular CLI usa este formato
-ng version
-ng help
-```
-
-4. Verificamos ubicacion de archivos
-```bash
-# Verificar ubicacion de archivos ejecutables en las variables de entorno PATH del sistema
-where node  # Comando Windows, obtiene todas las rutas disponibles del PATH, ordenadas
-which node  # Comando Linux, obtiene solo la primera ruta del PATH que encuentra, comentar que en el PATH la primera ruta disponible es la que se ejecuta
-
-where npm
-which npm
-
-where ng
-which ng
-
-# Otros
-where php
-which php
-
-where laravel
-which laravel
-
-where python
-which python
-
-where vuepress
-which vuepress
-
-where create-react-app
-which create-react-app
-
-where mongod
-which mongod
-
-# Verificar ubicacion de modulos instalados de Node (Esto se aplica a las secciones Node, Angular y React)
-# Los paquetes de Node.js se instalan mediante npm, el gestor de paquetes de Node.js.
-# En sistemas Unix o Linux se instalan en la carpeta /usr/local/lib/node_modules/, mientras que en Windows se instalan en C:\Users\<user>\AppData\Roaming\npm\node_modules.
-# Los paquetes instalados localmente se almacenan en la carpeta node_modules en la raíz del proyecto.
-# Para ver la ubicacion global de los paquetes de Node.js en un sistema, se puede ejecutar el siguiente comando en la consola:
-npm root -g
-# Para ver la ubicacion local de los paquetes dentro de un proyecto específico, se puede ejecutar el siguiente comando en la consola dentro del directorio del proyecto:
-npm root
+# Verificar version de Angular CLI (globalmente y proyecto) y version de Angular (proyecto)
+ng version  # ng --version no funciona
+ng
 ```
 
 
@@ -165,18 +123,18 @@ ng serve                   # Levantamos el proyecto
 ng serve --open            # Levantamos el proyecto y abrimos en navegador
 
 # Dependencias
-Las dependencias siempre estan instaladas en packgage.json del proyecto
+    Las dependencias siempre estan instaladas en packgage.json del proyecto
 
-npm install  # Puedes recuperar node_modules y package-lock.json con el archivo package.json
-npm update   # Actualizar las dependencias que ya tenga, pero ademas instalara las dependencias que faltan
+    npm install  # Puedes recuperar node_modules y package-lock.json con el archivo package.json
+    npm update   # Actualizar las dependencias que ya tenga, pero ademas instalara las dependencias que faltan
 
 # Componentes
-ng g component components/home
-ng g component components/videojuego
-ng g component components/zapatillas
-ng g component components/cursos
-ng g component components/externo
-ng g component components/contacto
+    ng g component components/home
+    ng g component components/videojuego
+    ng g component components/zapatillas
+    ng g component components/cursos
+    ng g component components/externo
+    ng g component components/contacto
 ```
 
 
@@ -187,6 +145,8 @@ ng g component components/contacto
 * Cuando cree este proyecto lo hice con **Angular CLI 16.2.2**
 :::
 
+* [Instalamos jquery](https://www.npmjs.com/package/jquery)
+
 ```
 ng new proyecto-angular  # Creamos el proyecto
 npm start                # Levantamos el proyecto con el script definido en el archivo package.json
@@ -194,21 +154,21 @@ ng serve                 # Levantamos el proyecto
 ng serve --open          # Levantamos el proyecto y abrimos en navegador
 
 # Dependencias
-Las dependencias siempre estan instaladas en packgage.json del proyecto
+    Las dependencias siempre estan instaladas en packgage.json del proyecto
 
-npm install  # Puedes recuperar node_modules y package-lock.json con el archivo package.json
-npm update   # Actualizar las dependencias que ya tenga, pero ademas instalara las dependencias que faltan
+    npm install  # Puedes recuperar node_modules y package-lock.json con el archivo package.json
+    npm update   # Actualizar las dependencias que ya tenga, pero ademas instalara las dependencias que faltan
 
-npm i jquery  # Instalamos jquery
+    npm i jquery  # Instalamos jquery
 
 # Componentes
-ng g component components/about
-ng g component components/create
-ng g component components/edit
-ng g component components/projects
-ng g component components/detail
-ng g component components/contact
-ng g component components/error
+    ng g component components/about
+    ng g component components/create
+    ng g component components/edit
+    ng g component components/projects
+    ng g component components/detail
+    ng g component components/contact
+    ng g component components/error
 ```
 
 
@@ -228,7 +188,7 @@ ng g component components/error
 * [Uso de form.controls['input'].reset() en lugar de form.reset()](https://stackoverflow.com/questions/50197347/how-to-reset-only-specific-fields-of-form-in-angular-5)
 * [Problema de compatibilidad entre angular-froala-wysiwyg y ngModel](https://github.com/froala/angular-froala-wysiwyg/issues/4) (Se soluciono usando input tipo hidden)
 
-::: details Paginacion
+::: details Paginación
 **Creando una tabla paginada con back-end (server-side) en Angular y Laravel**
 * [Creando una tabla paginada con back-end (server-side) en Angular y Laravel](https://asfo.dev/creando-una-tabla-paginada-con-back-end-server-side-en-angular/)
 * [Instalamos ngx-pagination](https://www.npmjs.com/package/ngx-pagination)
@@ -242,35 +202,35 @@ ng serve             # Levantamos el proyecto
 ng serve --open      # Levantamos el proyecto y abrimos en navegador
 
 # Dependencias
-Las dependencias siempre estan instaladas en packgage.json del proyecto
+    Las dependencias siempre estan instaladas en packgage.json del proyecto
 
-npm install  # Puedes recuperar node_modules y package-lock.json con el archivo package.json
-npm update   # Actualizar las dependencias que ya tenga, pero ademas instalara las dependencias que faltan
+    npm install  # Puedes recuperar node_modules y package-lock.json con el archivo package.json
+    npm update   # Actualizar las dependencias que ya tenga, pero ademas instalara las dependencias que faltan
 
-npm i jquery                  # Instalamos jquery
-npm i bootstrap               # Instalamos bootstrap
-npm i angular-froala-wysiwyg  # Instalamos angular-froala-wysiwyg
-npm i angular-file-uploader   # Instalamos angular-file-uploader
-npm i ngx-pagination          # Instalamos ngx-pagination
+    npm i jquery                  # Instalamos jquery
+    npm i bootstrap               # Instalamos bootstrap
+    npm i angular-froala-wysiwyg  # Instalamos angular-froala-wysiwyg
+    npm i angular-file-uploader   # Instalamos angular-file-uploader
+    npm i ngx-pagination          # Instalamos ngx-pagination
 
 # Componentes
-ng g component components/login
-ng g component components/home
-ng g component components/register
-ng g component components/user-edit
-ng g component components/profile
-ng g component components/error
+    ng g component components/login
+    ng g component components/home
+    ng g component components/register
+    ng g component components/user-edit
+    ng g component components/profile
+    ng g component components/error
 
-ng g component components/category/category-index
-ng g component components/category/category-create
-ng g component components/category/category-edit
-ng g component components/category/category-post
-ng g component components/category/category-nav-item
+    ng g component components/category/category-index
+    ng g component components/category/category-create
+    ng g component components/category/category-edit
+    ng g component components/category/category-post
+    ng g component components/category/category-nav-item
 
-ng g component components/post/post-create
-ng g component components/post/post-edit
-ng g component components/post/post-detail
-ng g component components/post/post-list
+    ng g component components/post/post-create
+    ng g component components/post/post-edit
+    ng g component components/post/post-detail
+    ng g component components/post/post-list
 ```
 
 

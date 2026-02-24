@@ -1,7 +1,7 @@
 # 4 Python
 
 Podemos entrar a la web oficial de [Python](https://www.python.org/)<br>
-Podemos entrar a la web oficial de [PIP](https://pypi.org/)<br>
+Podemos entrar a la web oficial de [Pip](https://pypi.org/)<br>
 Podemos entrar a la web oficial de [Django](https://www.djangoproject.com/)<br>
 Podemos entrar a la web oficial de [DB Browser for SQLite](https://sqlitebrowser.org/)<br>
 
@@ -47,11 +47,58 @@ En esta seccion pondremos apuntes varios:
 ### Instalamos Python
 Instalamos [Python](https://www.python.org/downloads/) desde su web
 ::: tip Notas
-Recordar que los modulos se pueden descargar desde [PIP](https://pypi.org/)
+Recordar que los modulos se pueden descargar desde [Pip](https://pypi.org/)
 :::
 ```bash
 python --version
+python
+
 pip --version
+pip
+```
+
+### Instalamos Python en Laragon
+Instalamos [Python](https://www.python.org/downloads/) desde su web
+
+::: tip Notas
+* Los apuntes anteriores hacen referencia a instalar Python con su ejecutable **exe** desde su web
+* Los apuntes de esta sección hacen referencia a descargar la versión en formato **exe** de Python desde su web, para instalarlo como binario en Laragon, para esto debemos:
+:::
+
+1. Ir a la siguiente ruta:<br/>
+    [¿Cómo agregar una nueva versión de Python?](https://github.com/leokhoa/laragon/discussions/411/)
+	<img width="70%" :src="$withBase('/python/1 Instalar Python en Laragon.png')">
+	<img width="70%" :src="$withBase('/python/2 Instalar Python en Laragon.png')">
+	<img width="100%" :src="$withBase('/python/3 Instalar Python en Laragon.png')">
+2. Una vez realizada la instalación de Python en Laragon agregar la ruta al PATH de Windows.
+3. Para agregar Python al PATH de Windows, siga estos pasos:
+	1. Abra el menú Inicio y busque `Variables de entorno` y seleccione `Editar las variables de entorno del sistema`.
+	2. En la pestaña `Opciones avanzadas`, haga clic en `Variables de entorno`.
+	3. En la sección `Variables del sistema`, busque la variable `Path` y haga clic en `Editar`.
+	4. Haga clic en `Nuevo` y agregue la ruta de instalación de Python (por ejemplo, `C:\Users\Ernesto\AppData\Local\Microsoft\WindowsApps\python.exe`). ---- En nuestro caso seria `D:\PORTABLES\laragon\bin\python\python-3.12.7`.
+	5. Haga clic en `Aceptar` para guardar los cambios.
+
+### Masters en Python
+Describimos la version de Python utilizada en los Masters
+
+```bash
+D:\PORTABLES\laragon\bin\python
+	python-3.10 (python-3.10.6)
+	python-3.11.9
+	python-3.12.9
+	python-3.13.11
+
+C:\Users\Ernesto\anaconda3\envs
+	base (base-3.12.4)
+	base-3.12.12
+	llms (base-3.11.11)
+
+1 master-python-web               # python instalado en laragon  ----> python-3.10 (python-3.10.6)                                   ----> no se usa virtualizacion
+2 master-python-datascience       # python instalado en anaconda ----> base (base-3.12.4), base-3.12.12, python-3.10 (python-3.10.6) ----> se usa virtualizacion, revisar notas de virtualizacion ----> master-python-datascience, 1-python-datascience-newhorizons
+3 master-python-ia				  # python instalado en laragon  ----> llms (base-3.11.11), python-3.11.9, python-3.13.11            ----> se usa virtualizacion, revisar notas de virtualizacion ----> master-python-ia, 1-python-llm, 2-python-langchain
+4 master-python-odoo              # python instalado en laragon  ----> python-3.12.9                                                 ----> se usa virtualizacion, revisar notas de virtualizacion ----> master-python-odoo, 1-aprendiendo-odoo
+
+99 master-python-dataengineering  # python instalado en laragon  ----> python-3.11.9                                                 ----> se usa virtualizacion, revisar notas de virtualizacion ----> master-python-dataengineering, 1-aprendiendo-pyspark
 ```
 
 ### Modulos instalados
@@ -60,8 +107,16 @@ pip --version
 # https://byspel.com/como-ver-los-modulos-instalados-en-python/
 pip list
 
-# Actualizar PIP
-# https://datatofish.com/add-python-to-windows-path/ (Esta url también ayuda a entender como agregar al PATH de Windows, Python y PIP, además de actualizar PIP)
+# Para poder ver un modulo especifico y su version
+# ChatGPT
+pip list | grep <modulo>
+
+# Limpiar cache de pip (minuscula a proposito)
+# ChatGPT
+pip cache purge
+
+# Actualizar Pip
+# https://datatofish.com/add-python-to-windows-path/ (Esta url también ayuda a entender como agregar al PATH de Windows, Python y Pip, además de actualizar Pip)
 python -m pip install --upgrade pip
 
 # Instalar modulos
@@ -214,7 +269,7 @@ pip install pyjokes
 pip install pyinstaller
 ```
 
-### Ubicación de los Modulos instalados de Python
+### Ubicación de los modulos instalados
 ```bash
 # En general, los paquetes de Python se instalan en la carpeta "site-packages" del entorno de Python en el que se está trabajando. Esta carpeta se crea automáticamente durante la instalación de Python y es específica de cada versión de Python que se tenga instalada en el sistema.
 # La ubicación exacta de la carpeta "site-packages" puede variar dependiendo del sistema operativo y de la forma en que se instaló Python. En sistemas Linux y macOS, la carpeta "site-packages" suele encontrarse en la ruta "/usr/lib/pythonX.Y/site-packages", donde "X.Y" representa la versión específica de Python que se tiene instalada. En Windows, la carpeta "site-packages" suele estar ubicada en la ruta "C:\PythonX.Y\Lib\site-packages".
@@ -222,6 +277,8 @@ pip install pyinstaller
 import site
 print(site.getsitepackages())
 ```
+
+
 
 ## Django
 
@@ -232,8 +289,6 @@ print(site.getsitepackages())
 # Revisar version de Django instalada
 python -m django --version
 ```
-
-
 
 ```bash
 # Crear proyecto nuevo
@@ -275,8 +330,6 @@ python manage.py sqlmigrate miapp 0001
 # Ejecutar migracion creada
 python manage.py migrate
 ```
-
-
 
 ### Panel de Administración de Django
 ```bash

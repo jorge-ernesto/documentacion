@@ -30,7 +30,7 @@ En esta seccion pondremos enlaces utiles:
 	* En las colecciones tenemos documentos, no tenemos tablas
 	* Los documentos son objetos JSON pero que dentro de MongoDB se conocen como BSON (Binary JSON) y se utilizan porque los BSON son mas rapido a la hora de hacer operaciones con los datos
 	* En lugar de registros, tenemos los datos del documentos
-<img width="500px" :src="$withBase('/mongodb/1 Base de Datos - Coleccion.PNG')">
+<img width="500px" :src="$withBase('/mongodb/1 Base de Datos - Coleccion.png')">
 * [209. Instalamos MongoDB](https://www.udemy.com/course/master-en-javascript-aprender-js-jquery-angular-nodejs-y-mas/learn/lecture/10113414#overview)
 * [211. Administrador visual de MongoDB: RoboMongo / Robo3T](https://www.udemy.com/course/master-en-javascript-aprender-js-jquery-angular-nodejs-y-mas/learn/lecture/10113420#overview)
 
@@ -65,11 +65,11 @@ En esta seccion pondremos apuntes varios:
 Instalamos [MongoDB](https://www.mongodb.com/try/download/community) desde su web
 
 1. Descargar MongoDB (Hay 3 videos de los 3 cursos donde se muestra como instalar Robo3T)
-	<img width="80%" :src="$withBase('/mongodb/2 Descargar MongoDB localmente.PNG')">
+	<img width="80%" :src="$withBase('/mongodb/2 Descargar MongoDB localmente.png')">
 2. Account MongoDB (Configuración de MongoDB durante la instalación)
-	<img width="80%" :src="$withBase('/mongodb/3 Account MongoDB.PNG')">
+	<img width="80%" :src="$withBase('/mongodb/3 Account MongoDB.png')">
 3. Crear en nuestro directorio `C:`, una carpeta nueva llamada `data`, y dentro de ella, crear otra carpeta llamada `db`. Aqui se almacenaran las BD y configuraciones de MongoDB
-	<img width="80%" :src="$withBase('/mongodb/4 Directorio C.PNG')">
+	<img width="80%" :src="$withBase('/mongodb/4 Directorio C.png')">
 
 ### Ejecutamos MongoDB
 
@@ -98,39 +98,39 @@ Instalamos [Robo3T](https://robomongo.org/) desde su web
 1. Instalar Robo3T (Hay 3 videos de los 3 cursos donde se muestra como instalar Robo3T)
 
 ### Conexión en Robo3T
-<img width="100%" :src="$withBase('/mongodb/5 Conexion Robo3T.PNG')">
+<img width="100%" :src="$withBase('/mongodb/5 Conexion Robo3T.png')">
 
 ### Aprendiendo MongoDB
 #### Master en JavaScript: Aprender JS, jQuery, Angular, NodeJS
 ```javascript
-help       # Revisamos comandos de MongoDB
-db.help()  # Comando de Ayuda para DB
-show dbs   # Mostramos Bases de Datos
+help;          # Verificar comandos de MongoDB
+db.help();     # Verificar comandos de MongoDB relacionados a las BD
+db.version();  # Verificar version de BD
+db.stats();    # Verificar estadisticas de BD
+show dbs;      # Verificar Bases de Datos
 
-use curso_master_javascript;                                      # Creamos Base de Datos
-db.bookmarks.insert({id:1, title:'Curso Master en JavaScript'});  # Solo insertando una coleccion hacemos commit a la creacion de BD
+use curso_master_javascript;                                          # Creamos Base de Datos
+db.bookmarks.insert({ id: 1, title: 'Curso Master en JavaScript' });  # Solo insertando una coleccion hacemos commit a la creacion de BD
 
-db.getCollection('bookmarks').find({});      # Buscamos en coleccion "bookmarks"
-db.getCollection('bookmarks').find({id:1});  # Buscamos en coleccion "bookmarks" el documento con el campo/dato del documento id:1
-
-# Alternativas
-db.bookmarks.find();
-db.bookmarks.find({id:1});
+db.getCollection('bookmarks').find({});         # Buscamos en coleccion "bookmarks"
+db.getCollection('bookmarks').find({ id: 1 });  # Buscamos en coleccion "bookmarks" el documento con el campo/dato del documento id:1
+db.bookmarks.find();                            # Alternativa a buscamos en coleccion "bookmarks"
+db.bookmarks.find({ id: 1 });                   # Alternativa a buscamos en coleccion "bookmarks"
 ```
 
 #### Curso de MongoDB - Aprende bases de datos NoSQL + API NodeJS
 ```javascript
-help       # Revisamos comandos de MongoDB
-db.help()  # Comando de Ayuda para DB
-show dbs   # Mostramos Bases de Datos
+help;          # Verificar comandos de MongoDB
+db.help();     # Verificar comandos de MongoDB relacionados a las BD
+db.version();  # Verificar version de BD
+db.stats();    # Verificar estadisticas de BD
+show dbs;      # Verificar Bases de Datos
 
-use curso_mongo;                                        # Creamos Base de Datos
-db.frutas.insert({nombre:'Naranja', color:'naranja'});  # Solo insertando una coleccion hacemos commit a la creacion de BD
-manzana = {nombre:'Manzana', color:'verde'};            # Creamos variable, las variables solo persisten en la consola que se utilizan
-db.frutas.insert(manzana);                              # Insertamos coleccion usando variable
+use curso_mongo;                                            # Creamos Base de Datos
+db.frutas.insert({ nombre: 'Naranja', color: 'naranja' });  # Solo insertando una coleccion hacemos commit a la creacion de BD
+manzana = { nombre: 'Manzana', color: 'verde' };            # Creamos variable, las variables solo persisten en la consola que se utilizan
+db.frutas.insert(manzana);                                  # Insertamos coleccion usando variable
 
 db.getCollection('frutas').find({});  # Buscamos en coleccion "frutas"
-
-# Alternativas
-db.frutas.find();
+db.frutas.find();                     # Alternativa a buscamos en coleccion "frutas"
 ```

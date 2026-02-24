@@ -44,6 +44,9 @@ En esta seccion pondremos enlaces utiles:
 * [.gitignore no funciona](https://www.iteramos.com/pregunta/7813/gitignore-no-funciona)
 * [cómo deshabilitar el mensaje de git sobre el nombre de la rama inicial de git](https://stackoverflow.com/questions/65524512/how-to-disable-git-message-about-git-initial-branch-name)
 * [Nombre de archivo demasiado largo en Git para Windows](https://stackoverflow.com/questions/22575662/filename-too-long-in-git-for-windows)
+* [¿Por qué al hacer "git add" me dice "LF will be replaced by CRLF The file will have its original line endings in your working directory"?](https://es.stackoverflow.com/questions/320373/por-qu%C3%A9-al-hacer-git-add-me-dice-lf-will-be-replaced-by-crlf-the-file-will-h)
+* [SALTOS DE LÍNEA EN VISUAL STUDIO CODE Y GIT (LF VS CRLF)](https://www.petersplanet.nl/index.php/2023/08/28/line-breaks-in-visual-studio-code-and-git-lf-vs-crlf)
+* [Se puede usar "git config core.autocrlf" y "git config --global core.autocrlf" para saber como esta configurado "core.autocrlf" en el repositorio git y globalmente en git respectivamente](https://stackoverflow.com/questions/5834014/lf-will-be-replaced-by-crlf-in-git-what-is-that-and-is-it-important)
 
 ## Apuntes varios
 
