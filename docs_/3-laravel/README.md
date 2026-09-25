@@ -77,7 +77,7 @@ En esta seccion pondremos enlaces utiles:
 En esta seccion pondremos apuntes varios:
 
 ### Instalamos Composer
-Instalamos [Composer](https://getcomposer.org/) desde su web.
+Instalamos [Composer](https://getcomposer.org/) desde su web
 ```bash
 composer --version
 composer
@@ -105,8 +105,8 @@ php artisan
 * [Crear controllers](https://laravel.com/docs/7.x/controllers#resource-controllers)
 * [Eloquent ORM](https://laravel.com/docs/7.x/eloquent)
 * [Validacion unique](https://es.stackoverflow.com/questions/80943/error-al-actualizar-un-campo-unique)
-* [Problema con "->groupBy" ---> "'strict' => false, //true, se modifico"](https://stackoverflow.com/questions/40917189/laravel-syntax-error-or-access-violation-1055-error)
-* [Problema con migraciones al trabajar con con una versión inferior de Mysql v5.7.7 ---> "Schema::defaultStringLength(191); //Agregado para soportar migraciones"](https://bluuweb.github.io/tutorial-laravel/bases-datos/#migraciones)
+* [Problema con "->groupBy" ----> "'strict' => false, //true, se modifico"](https://stackoverflow.com/questions/40917189/laravel-syntax-error-or-access-violation-1055-error)
+* [Problema con migraciones al trabajar con con una versión inferior de Mysql v5.7.7 ----> "Schema::defaultStringLength(191); //Agregado para soportar migraciones"](https://bluuweb.github.io/tutorial-laravel/bases-datos/#migraciones)
 * [Relacion de muchos a muchos, users, roles, y role_user](https://laravel.com/docs/7.x/eloquent-relationships#many-to-many)
 
 ```bash
@@ -236,7 +236,7 @@ php artisan route:list  # Te muestra todas las rutas de web.php
 php artisan list        # Lista de comandos
 ```
 
-#### Instalar libreria para JWT ---> [23. Instalar Librería para JWT](https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/learn/lecture/13144876#overview)
+#### Instalar libreria para JWT ----> [23. Instalar Librería para JWT](https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/learn/lecture/13144876#overview)
 ```
 Ver video "23. Instalar libreria para JWT" de Victor Robles
 
@@ -245,7 +245,7 @@ Pasos
 2. Ejecutar "composer update"
 ```
 
-#### Provider ---> [24. Creando sistema de autenticación con JWT](https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/learn/lecture/13144882#overview)
+#### Provider ----> [24. Creando sistema de autenticación con JWT](https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/learn/lecture/13144882#overview)
 ```
 Ver video "24. Creando sistema de autenticación con JWT" de Victor Robles
 
@@ -257,7 +257,7 @@ Pasos
 Si no registramos el provider la linea $jwtAuth = new JwtAuth(); en la function login de UserController no funcionara
 ```
 
-#### Middleware ---> [30. Middleware de autenticación](https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/learn/lecture/13154952#content)
+#### Middleware ----> [30. Middleware de autenticación](https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/learn/lecture/13154952#content)
 ```
 Ver video "30. Middleware de autenticacion" de Victor Robles
 
